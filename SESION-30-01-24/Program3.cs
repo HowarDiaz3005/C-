@@ -8,7 +8,7 @@ Console.Write("/\n==================");
 String ed = Console.ReadLine();
 Console.Write("/\n==================");
 Console.Write("/\nIngrese su sexo ( Hombre = H | Mujer = F):");
-Console.Write("/\n==============--====");
+Console.Write("/\n==================");
 String sex = Console.ReadLine();
  //======================
  // Formulacion de datos.
@@ -23,4 +23,4 @@ String sex = Console.ReadLine();
 }
  Console.WriteLine("\n\n");
 Console.WriteLine("\n------>Terminado");
-Console.ReadKey();
+Console.readKey
