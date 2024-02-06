@@ -1,0 +1,8 @@
+C:\Users\Sistema2-15\source\repos\CCoche\CCoche\bin\Debug\CCoche.exe.config
+C:\Users\Sistema2-15\source\repos\CCoche\CCoche\bin\Debug\CCoche.exe
+C:\Users\Sistema2-15\source\repos\CCoche\CCoche\bin\Debug\CCoche.pdb
+C:\Users\Sistema2-15\source\repos\CCoche\CCoche\obj\Debug\CCoche.csproj.AssemblyReference.cache
+C:\Users\Sistema2-15\source\repos\CCoche\CCoche\obj\Debug\CCoche.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sistema2-15\source\repos\CCoche\CCoche\obj\Debug\CCoche.csproj.CoreCompileInputs.cache
+C:\Users\Sistema2-15\source\repos\CCoche\CCoche\obj\Debug\CCoche.exe
+C:\Users\Sistema2-15\source\repos\CCoche\CCoche\obj\Debug\CCoche.pdb
