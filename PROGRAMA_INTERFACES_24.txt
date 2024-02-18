@@ -1,0 +1,61 @@
+using System;
+
+// Interfaz para operaciones aritméticas básicas
+interface ICalculadora<T> {
+    T Sumar(T a, T b);
+    T Restar(T a, T b);
+    T Multiplicar(T a, T b);
+    T Dividir(T a, T b);
+}
+
+// Clase genérica de la calculadora
+class Calculadora<T> : ICalculadora<T> {
+    public T Sumar(T a, T b) {
+        dynamic x = a;
+        dynamic y = b;
+        return x + y;
+    }
+
+    public T Restar(T a, T b) {
+        dynamic x = a;
+        dynamic y = b;
+        return x - y;
+    }
+
+    public T Multiplicar(T a, T b) {
+        dynamic x = a;
+        dynamic y = b;
+        return x * y;
+    }
+
+    public T Dividir(T a, T b) {
+        dynamic x = a;
+        dynamic y = b;
+        return x / y;
+    }
+}
+
+class Program {
+    static void Main(string[] args) {
+        // Uso de la calculadora con enteros
+        Console.WriteLine("Calculadora con enteros:");
+        ICalculadora<int> calculadoraEnteros = new Calculadora<int>();
+        Console.WriteLine("5 + 3 = " + calculadoraEnteros.Sumar(5, 3));
+        Console.WriteLine("5 - 3 = " + calculadoraEnteros.Restar(5, 3));
+        Console.WriteLine("5 * 3 = " + calculadoraEnteros.Multiplicar(5, 3));
+        Console.WriteLine("5 / 3 = " + calculadoraEnteros.Dividir(5, 3));
+
+        // Uso de la calculadora con decimales
+        Console.WriteLine("\nCalculadora con decimales:");
+        ICalculadora<double> calculadoraDecimales = new Calculadora<double>();
+        Console.WriteLine("5.5 + 3.2 = " + calculadoraDecimales.Sumar(5.5, 3.2));
+        Console.WriteLine("5.5 - 3.2 = " + calculadoraDecimales.Restar(5.5, 3.2));
+        Console.WriteLine("5.5 * 3.2 = " + calculadoraDecimales.Multiplicar(5.5, 3.2));
+        Console.WriteLine("5.5 / 3.2 = " + calculadoraDecimales.Dividir(5.5, 3.2));
+    }
+}
+
+
+Este programa define una interfaz ICalculadora<T> que proporciona métodos para realizar operaciones aritméticas básicas. Luego, la clase Calculadora<T> implementa esta interfaz para realizar operaciones aritméticas utilizando tipos genéricos.
+
+En el método Main, se crea una instancia de la clase Calculadora<T> utilizando tipos int y double, lo que demuestra la flexibilidad de la implementación genérica. Finalmente, se realizan algunas operaciones aritméticas con la calculadora y se muestra el resultado en la consola.
